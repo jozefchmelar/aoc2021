@@ -14,7 +14,7 @@ var newState = File
                 _ => oldState
             });
 
-            Console.WriteLine(newState.horizontal * newState.depth);
+Console.WriteLine(newState.horizontal * newState.depth);
 
 //pt 2
 
