@@ -6,7 +6,7 @@ var newState = File
     .Aggregate(bitCount, (previousBitCount, line) =>
         previousBitCount.Select( (prevVal, index) => prevVal + line[index]).ToArray()
     )
-    .Select(x=> ((inputCount-x) >= inputCount / 2) ? "1" :"0"); // if the 
+    .Select(x=> ((inputCount-x) >= inputCount / 2) ? "1" :"0"); // if the sum is bigger than 500, it means that the 1 is dominant :)
 
 var gammaBinaryString = string.Join("",newState);
 var epislonBinaryString = string.Join("",
